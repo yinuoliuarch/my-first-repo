@@ -6,6 +6,26 @@ function createRenderer(container) {
   return renderer;
 }
 
+function startWhenThreeReady(callback) {
+  if (window.THREE && window.THREE.OrbitControls) {
+    callback();
+    return;
+  }
+
+  let attempts = 0;
+  const timer = window.setInterval(() => {
+    attempts += 1;
+    if (window.THREE && window.THREE.OrbitControls) {
+      window.clearInterval(timer);
+      callback();
+    }
+
+    if (attempts > 60) {
+      window.clearInterval(timer);
+    }
+  }, 100);
+}
+
 function createCamera(container) {
   const camera = new THREE.PerspectiveCamera(
     45,
@@ -169,7 +189,7 @@ function startFoggyMoodRoom() {
   animate();
 }
 
-if (window.THREE) {
+startWhenThreeReady(() => {
   startOrbitCatShrine();
   startFoggyMoodRoom();
-}
+});
