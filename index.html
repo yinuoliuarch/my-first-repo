@@ -86,8 +86,53 @@
         </section>
       </section>
     </section>
+
+    <section class="assignment-intro" aria-labelledby="assignment-title">
+      <h2 id="assignment-title">Spatial Canvas Assignment</h2>
+    </section>
+
+    <section class="canvas-section" aria-labelledby="three-title">
+      <div class="section-header">
+        <h2 id="three-title">3D Spatial Canvases / Three.js</h2>
+      </div>
+
+      <div class="canvas-grid canvas-grid--three">
+        <article class="canvas-widget">
+          <div class="widget-title">01 / Orbit Cat</div>
+          <div class="three-stage" id="three-shrine" aria-label="Three.js orbit cat shrine"></div>
+        </article>
+
+        <article class="canvas-widget">
+          <div class="widget-title">02 / FLOATING DONUTS</div>
+          <div class="three-stage" id="three-room" aria-label="Three.js foggy mood room"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="canvas-section" aria-labelledby="p5-title">
+      <div class="section-header">
+        <h2 id="p5-title">2D Spatial Canvases / P5.js</h2>
+      </div>
+
+      <div class="canvas-grid">
+        <article class="canvas-widget">
+          <div class="widget-title">03 / Cat</div>
+          <div class="p5-stage" id="p5-static" aria-label="P5 static emo cat poster"></div>
+        </article>
+
+        <article class="canvas-widget">
+          <div class="widget-title">04 / IN RAIN</div>
+          <div class="p5-stage" id="p5-interactive" aria-label="P5 interactive emo cat animation"></div>
+        </article>
+      </div>
+    </section>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
   <script src="script.js"></script>
+  <script src="p5-sketches.js"></script>
+  <script src="three-sketches.js"></script>
 </body>
 </html>

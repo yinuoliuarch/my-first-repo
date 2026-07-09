@@ -2,7 +2,7 @@
 
 ## Core Direction
 
-The website should feel like a personal emo/MySpace-era blog from the early 2000s, not a modern landing page. The interface should be dense, dramatic, slightly messy, and emotionally performative, while still being readable and functional.
+The website feels like a personal emo/MySpace-era blog from the early 2000s, not a modern landing page. The interface should be dense, dramatic, slightly messy, and emotionally performative, while still being readable and functional.
 
 The main reference is a fake browser window with a black-and-hot-pink MySpace profile layout: small navigation links, compact profile panels, glittery visual noise, low-resolution internet energy, and an intentionally personal tone.
 
