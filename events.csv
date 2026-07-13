@@ -1,0 +1,17 @@
+name,start,end,category
+Photography,1839,2026,Capture
+Chronophotography,1878,1905,Motion
+Cinema,1895,2026,Motion
+Aerial Photography,1909,2026,Remote
+Television,1927,2026,Transmission
+Satellite Imaging,1959,2026,Remote
+Computer Vision,1966,2026,Synthetic
+Digital Photography,1975,2026,Capture
+Geographic Information Systems,1982,2026,Spatial
+Digital Photogrammetry,1984,2026,Spatial
+LiDAR Mapping,1994,2026,Spatial
+Webcam Culture,1996,2015,Transmission
+Google Earth,2005,2026,Remote
+Generative Adversarial Networks,2014,2026,Synthetic
+Neural Radiance Fields,2020,2026,Spatial
+Text-to-Image Models,2021,2026,Synthetic

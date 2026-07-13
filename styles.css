@@ -429,6 +429,176 @@ h1 {
   height: 100% !important;
 }
 
+.temporal-section {
+  margin: 8px;
+  border: 2px solid var(--white);
+  background: #080808;
+}
+
+.temporal-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(250px, 0.65fr);
+  gap: 4px 28px;
+  padding: 24px 18px 20px;
+  border-bottom: 1px solid #454545;
+}
+
+.temporal-heading h2 {
+  grid-column: 1;
+  margin: 0;
+  font: 700 clamp(34px, 6vw, 72px)/0.88 Arial, Helvetica, sans-serif;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+.temporal-heading > p:last-child {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: end;
+  max-width: 36ch;
+  margin: 0;
+  color: #c9c9c9;
+  font: 12px/1.5 "Courier New", monospace;
+}
+
+.temporal-kicker {
+  grid-column: 1 / -1;
+  margin: 0 0 18px;
+  color: var(--pink-hot);
+  font: 700 10px/1 "Courier New", monospace;
+  letter-spacing: 0.14em;
+}
+
+.temporal-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 18px;
+  border-bottom: 1px solid #454545;
+  color: #999;
+  font: 10px/1 "Courier New", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.temporal-canvas {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  background:
+    linear-gradient(90deg, transparent 0 50%, rgba(255, 255, 255, 0.018) 50%),
+    #080808;
+  background-size: 32px 100%;
+}
+
+.temporal-canvas svg {
+  display: block;
+  width: 100%;
+  min-width: 820px;
+  height: auto;
+}
+
+.temporal-grid line {
+  stroke: #292929;
+  stroke-width: 1;
+}
+
+.temporal-axis text,
+.temporal-legend text {
+  fill: #777;
+  font: 9px "Courier New", monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.temporal-legend line {
+  stroke-width: 2;
+}
+
+.temporal-signal {
+  cursor: crosshair;
+  outline: none;
+  transition: opacity 180ms ease;
+}
+
+.signal-name {
+  fill: #b8b8b8;
+  font: 10px "Courier New", monospace;
+  transition: fill 180ms ease;
+}
+
+.signal-line {
+  stroke-width: 2;
+  transition: stroke-width 180ms ease, filter 180ms ease;
+}
+
+.temporal-signal.is-muted {
+  opacity: 0.12;
+}
+
+.temporal-signal.is-active .signal-line {
+  stroke-width: 5;
+  filter: drop-shadow(0 0 5px currentColor);
+}
+
+.temporal-signal.is-active .signal-name,
+.temporal-signal:focus .signal-name {
+  fill: var(--white);
+  font-weight: 700;
+}
+
+.temporal-tooltip {
+  position: absolute;
+  z-index: 3;
+  width: 215px;
+  padding: 10px 12px;
+  border: 1px solid var(--white);
+  background: rgba(5, 5, 5, 0.96);
+  box-shadow: 5px 5px 0 var(--pink-dark);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(4px);
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+
+.temporal-tooltip.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.temporal-tooltip span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--pink-hot);
+  font: 9px/1 "Courier New", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.temporal-tooltip strong {
+  display: block;
+  font-size: 13px;
+}
+
+.temporal-tooltip p,
+.temporal-note {
+  margin: 5px 0 0;
+  color: #aaa;
+  font: 10px/1.4 "Courier New", monospace;
+}
+
+.temporal-note {
+  margin: 0;
+  padding: 12px 18px;
+  border-top: 1px solid #454545;
+}
+
+.temporal-error {
+  margin: 0;
+  padding: 30px 18px;
+  color: var(--pink-hot);
+  font: 11px/1.5 "Courier New", monospace;
+}
+
 @keyframes blink {
   0% {
     opacity: 0.25;
@@ -508,6 +678,26 @@ h1 {
   .three-stage,
   .p5-stage {
     height: 240px;
+  }
+
+  .temporal-heading {
+    grid-template-columns: 1fr;
+    padding: 18px 12px;
+  }
+
+  .temporal-heading > p:last-child {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 14px;
+  }
+
+  .temporal-meta,
+  .temporal-note {
+    padding-inline: 12px;
+  }
+
+  .temporal-canvas svg {
+    min-width: 760px;
   }
 }
 
