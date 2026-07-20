@@ -1,0 +1,13 @@
+id,name,role,age,department,friends,size,color
+miso,Miso,astoria,7,Astoria Alley,5,34,#a96982
+pepper,Pepper,astoria,5,Astoria Alley,4,30,#a96982
+bean,Bean,astoria,1,Astoria Alley,4,25,#a96982
+sunny,Sunny,jackson,6,Jackson Heights Courtyard,5,33,#98a276
+mochi,Mochi,jackson,4,Jackson Heights Courtyard,4,29,#98a276
+pixel,Pixel,jackson,1,Jackson Heights Courtyard,3,24,#98a276
+captain,Captain,redhook,9,Red Hook Wharf,5,36,#7193a3
+minnow,Minnow,redhook,3,Red Hook Wharf,4,27,#7193a3
+boots,Boots,redhook,2,Red Hook Wharf,4,28,#7193a3
+luna,Luna,les,8,Lower East Side Bodega,5,35,#88759e
+bagel,Bagel,les,4,Lower East Side Bodega,5,30,#88759e
+smudge,Smudge,les,1,Lower East Side Bodega,4,24,#88759e

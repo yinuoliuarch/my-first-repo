@@ -37,6 +37,17 @@
       </nav>
     </header>
 
+    <div class="y2k-ticker" aria-label="Site status">
+      <div class="y2k-ticker__track">
+        <span>★ ASHLYN_CATCORE IS ONLINE</span>
+        <span>WELCOME 2 MY CATSPACE</span>
+        <span>BEST VIEWED WITH FEELINGS ENABLED</span>
+        <span>★ ASHLYN_CATCORE IS ONLINE</span>
+        <span>WELCOME 2 MY CATSPACE</span>
+        <span>BEST VIEWED WITH FEELINGS ENABLED</span>
+      </div>
+    </div>
+
     <section class="blog-layout">
       <aside class="profile-card" aria-label="Profile">
         <h1 id="page-title">Ashlyn_Catcore</h1>
@@ -58,10 +69,27 @@
           <li><a href="#">Pics</a></li>
           <li><a href="#">Block</a></li>
         </ul>
+
+        <aside class="profile-ad" aria-label="Advertisement for the NYC Street Cats map">
+          <p class="profile-ad__label">Advertisement</p>
+          <div class="profile-ad__content">
+            <img src="assets/cats/cat-03.png" alt="Bean, a kitten from the Astoria Alley family">
+            <div>
+              <strong>Who is your<br>street-cat cousin?</strong>
+              <span>12 cats · 4 colonies · 20 family ties</span>
+              <a href="#relations-title">Enter the cat network »</a>
+            </div>
+          </div>
+        </aside>
       </aside>
 
       <section class="blog-panel" aria-live="polite">
         <div class="network-banner">Ashlyn_Catcore is in your extended network</div>
+        <div class="y2k-status-row" aria-label="Profile status">
+          <span><i></i> online now</span>
+          <span>mood: existential :3</span>
+          <span>last login: 07.20.26</span>
+        </div>
         <article class="entry">
           <p class="entry-label">Ashlyn_Catcore's Latest Blog Entry</p>
           <figure class="meme-frame">
@@ -83,86 +111,80 @@
             the early 2000s and this page is powered by glitter, heartbreak,
             and random meme cats.
           </p>
+          <div class="web-stamps" aria-label="Web badges">
+            <span>HTML<br>LOVER</span>
+            <span>NO POP-UPS<br>JUST CATS</span>
+            <span>MADE WITH<br>&lt;3 + CSS</span>
+          </div>
         </section>
       </section>
     </section>
 
-    <section class="assignment-intro" aria-labelledby="assignment-title">
-      <h2 id="assignment-title">Spatial Canvas Assignment</h2>
-    </section>
-
-    <section class="canvas-section" aria-labelledby="three-title">
-      <div class="section-header">
-        <h2 id="three-title">3D Spatial Canvases / Three.js</h2>
-      </div>
-
-      <div class="canvas-grid canvas-grid--three">
-        <article class="canvas-widget">
-          <div class="widget-title">01 / Orbit Cat</div>
-          <div class="three-stage" id="three-shrine" aria-label="Three.js orbit cat shrine"></div>
-        </article>
-
-        <article class="canvas-widget">
-          <div class="widget-title">02 / FLOATING DONUTS</div>
-          <div class="three-stage" id="three-room" aria-label="Three.js foggy mood room"></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="canvas-section" aria-labelledby="p5-title">
-      <div class="section-header">
-        <h2 id="p5-title">2D Spatial Canvases / P5.js</h2>
-      </div>
-
-      <div class="canvas-grid">
-        <article class="canvas-widget">
-          <div class="widget-title">03 / Cat</div>
-          <div class="p5-stage" id="p5-static" aria-label="P5 static emo cat poster"></div>
-        </article>
-
-        <article class="canvas-widget">
-          <div class="widget-title">04 / IN RAIN</div>
-          <div class="p5-stage" id="p5-interactive" aria-label="P5 interactive emo cat animation"></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="temporal-section" aria-labelledby="temporal-title">
-      <header class="temporal-heading">
-        <p class="temporal-kicker">05 / TEMPORAL STRUCTURES / D3.JS</p>
-        <h2 id="temporal-title">Chronological Media</h2>
-        <p>
-          A partial history of technologies that taught images to record,
-          measure and reconstruct the world.
-        </p>
+    <section class="relations-section" aria-labelledby="relations-title">
+      <header class="relations-heading">
+        <p class="relations-kicker">06 / RELATIONAL STRUCTURES / D3.JS</p>
+        <div>
+          <h2 id="relations-title">NYC Street Cats<br>Relational Map</h2>
+          <p class="relations-deck">
+            An imagined kinship map following four street-cat families across
+            bodegas, courtyards, waterfront lots, and alleys in New York City.
+          </p>
+        </div>
+        <dl class="relations-stats" aria-label="Network summary">
+          <div><dt id="node-count">—</dt><dd>cats</dd></div>
+          <div><dt id="edge-count">—</dt><dd>family ties</dd></div>
+          <div><dt>4</dt><dd>colonies</dd></div>
+        </dl>
+        <div class="relations-web-badges" aria-label="Map status">
+          <span>● LIVE FAMILY DATABASE</span>
+          <span>YOU ARE VISITOR <strong>000042</strong></span>
+          <span>NYC CAT WEBRING ← PREV | NEXT →</span>
+        </div>
       </header>
 
-      <div class="temporal-meta" aria-label="Visualization key">
-        <span>1839—2026</span>
-        <span>hover a signal to inspect</span>
+      <div class="relations-toolbar">
+        <div class="relations-legend" aria-label="Node type legend">
+          <span><i class="legend-dot legend-dot--astoria"></i>Astoria Alley</span>
+          <span><i class="legend-dot legend-dot--jackson"></i>Jackson Courtyard</span>
+          <span><i class="legend-dot legend-dot--redhook"></i>Red Hook Wharf</span>
+          <span><i class="legend-dot legend-dot--les"></i>LES Bodega</span>
+        </div>
+        <div class="relations-actions">
+          <span>scroll to zoom · drag to pan · drag nodes</span>
+          <button id="network-reset" type="button">Reset view</button>
+        </div>
       </div>
 
-      <div
-        id="d3-container-3"
-        class="temporal-canvas"
-        role="img"
-        aria-label="Timeline showing overlapping histories of visual and spatial technologies"
-      ></div>
+      <div class="network-frame">
+        <div
+          id="relational-network"
+          class="network-canvas"
+          role="img"
+          aria-label="Interactive force-directed family map of fictional New York City street cats"
+        ></div>
 
-      <p class="temporal-note">
-        Dates describe approximate periods of cultural and technical influence,
-        not product lifespans. Synthetic dataset assembled for this study.
-      </p>
+        <aside class="network-inspector" id="network-inspector" aria-live="polite">
+          <p class="inspector-index">SELECT A CAT</p>
+          <h3>Meet the families</h3>
+          <p>
+            Hover to trace immediate family ties. Select a portrait to meet a
+            cat and see their closest relations.
+          </p>
+        </aside>
+
+        <div class="network-tooltip" id="network-tooltip" role="tooltip"></div>
+      </div>
+
+      <footer class="relations-note">
+        <p>THICKER LINES = STRONGER BONDS</p>
+        <p>ARROWS SHOW CARE OR FAMILY DIRECTION</p>
+        <p>Imagined dataset · New York City · 2026</p>
+      </footer>
     </section>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
   <script src="script.js"></script>
-  <script src="p5-sketches.js"></script>
-  <script src="three-sketches.js"></script>
-  <script src="concurrent-events-cvs.js"></script>
+  <script src="relational-network.js"></script>
 </body>
 </html>

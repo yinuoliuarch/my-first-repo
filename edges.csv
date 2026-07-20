@@ -1,0 +1,21 @@
+source,target,relationship,course,since,strength,type,department
+miso,pepper,bonded pair,31st Avenue,2021,0.96,bidirectional,Astoria Alley
+miso,bean,mother of,Boiler Room,2025,0.95,directed,Astoria Alley
+pepper,bean,protects,Fire Escape,2025,0.84,directed,Astoria Alley
+sunny,mochi,littermates,82nd Street,2022,0.94,bidirectional,Jackson Courtyard
+sunny,pixel,mother of,Community Garden,2025,0.97,directed,Jackson Courtyard
+mochi,pixel,aunt of,Laundry Yard,2025,0.82,directed,Jackson Courtyard
+captain,minnow,adoptive parent,Van Brunt Street,2023,0.89,directed,Red Hook Wharf
+captain,boots,adoptive parent,Pier 44,2024,0.87,directed,Red Hook Wharf
+minnow,boots,found family,Fish Market,2024,0.92,bidirectional,Red Hook Wharf
+luna,bagel,bonded pair,Orchard Street,2022,0.95,bidirectional,LES Bodega
+luna,smudge,mother of,Stockroom,2025,0.98,directed,LES Bodega
+bagel,smudge,guards,Bodega Awning,2025,0.86,directed,LES Bodega
+pepper,sunny,shares night route,Queensboro Plaza,2023,0.57,bidirectional,Cross-colony
+bean,pixel,playmates,Roosevelt Avenue,2026,0.66,bidirectional,Cross-colony
+mochi,bagel,shares caretaker,Delancey Street,2024,0.61,bidirectional,Cross-colony
+captain,luna,elder alliance,East River Route,2021,0.71,bidirectional,Cross-colony
+boots,smudge,window friends,Ferry Route,2026,0.54,bidirectional,Cross-colony
+miso,captain,former littermates,Brooklyn Queens Route,2018,0.78,bidirectional,Cross-colony
+sunny,luna,shares winter shelter,Lower Manhattan,2020,0.69,bidirectional,Cross-colony
+minnow,bagel,food-route rivals,Canal Street,2025,0.43,bidirectional,Cross-colony
