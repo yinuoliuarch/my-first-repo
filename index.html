@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mapbox-token" content="pk.eyJ1IjoieWlub25vbm9ubyIsImEiOiJjbXJ3d2htc2QwMWg0MndxNm8wMGI4bXF4In0.JtVHSpARCOkRsbFeMRZC0w">
   <title>Emo Meme Cats</title>
   <link rel="preconnect" href="https://cataas.com">
+  <link rel="preconnect" href="https://api.mapbox.com">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.25.0/mapbox-gl.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20260713-1">
 </head>
 <body>
@@ -181,10 +184,66 @@
         <p>Imagined dataset · New York City · 2026</p>
       </footer>
     </section>
+
+    <section class="geo-section" aria-labelledby="geo-title">
+      <header class="geo-heading">
+        <p class="geo-kicker">07 / GEOSPATIAL STRUCTURES / MAPBOX GL JS</p>
+        <div>
+          <p class="geo-eyebrow">NYC NIGHT TERRITORIES</p>
+          <h2 id="geo-title">Where the<br>street cats roam</h2>
+        </div>
+        <p class="geo-deck">
+          Four imagined cat colonies, situated inside real New York City
+          neighborhood boundaries. The map connects their family network to
+          courtyards, bodegas, alleys, and waterfront edges after dark.
+        </p>
+      </header>
+
+      <div class="geo-toolbar" aria-label="Map legend">
+        <div class="geo-legend">
+          <span><i style="--territory-color: #d77c9c"></i>Astoria Alley</span>
+          <span><i style="--territory-color: #bbc67c"></i>Jackson Courtyard</span>
+          <span><i style="--territory-color: #7db8ce"></i>Red Hook Wharf</span>
+          <span><i style="--territory-color: #a990d0"></i>LES Bodega</span>
+        </div>
+        <p>drag to pan / scroll to zoom / select a colony</p>
+      </div>
+
+      <div class="geo-frame">
+        <div
+          id="cat-territory-map"
+          class="geo-map"
+          role="application"
+          aria-label="Interactive Mapbox map of four fictional New York City street cat colonies"
+        ></div>
+
+        <div class="geo-map-status" id="map-status" role="status" aria-live="polite">
+          <strong>MAP CONNECTION PENDING</strong>
+          <span>Add your Mapbox public access token in index.html to load the atlas.</span>
+        </div>
+
+        <aside class="geo-inspector" id="geo-inspector" aria-live="polite">
+          <p class="geo-inspector__index">FIELD NOTE / 000</p>
+          <h3>Choose a territory</h3>
+          <p>Select a glowing colony marker to read its situated field note.</p>
+          <dl>
+            <div><dt>Dataset</dt><dd>NYC DCP 2020 NTAs</dd></div>
+            <div><dt>Colonies</dt><dd>4 imagined sites</dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <footer class="geo-note">
+        <p>BOUNDARIES: NYC DEPARTMENT OF CITY PLANNING, 2020 NTAs</p>
+        <p>COLONY LOCATIONS + ROUTES: IMAGINED DATASET, 2026</p>
+      </footer>
+    </section>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.25.0/mapbox-gl.js"></script>
   <script src="script.js"></script>
   <script src="relational-network.js"></script>
+  <script src="mapbox-cat-territories.js"></script>
 </body>
 </html>
